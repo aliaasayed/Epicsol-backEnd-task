@@ -70,5 +70,18 @@ router.delete("/delete/:id", urlEncodedMid, function (req, res) {
     res.json(contacts);
 });
 
+// Get all contacts
+router.get("/list", urlEncodedMid, function (req, res) {
+    var authorizedUser = lodash.filter(users, function (user) {
+        return user.authorization == req.headers.authorization
+    });
+
+    if (authorizedUser.length == 0)
+        res.json("Not Authorized User");
+
+    res.json(contacts);
+});
+
+
 
 module.exports = router;
