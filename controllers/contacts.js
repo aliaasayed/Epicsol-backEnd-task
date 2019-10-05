@@ -82,6 +82,22 @@ router.get("/list", urlEncodedMid, function (req, res) {
     res.json(contacts);
 });
 
+// Search in contacts
+router.post("/search/:keyword", urlEncodedMid, function (req, res) {
+    var authorizedUser = lodash.filter(users, function (user) {
+        return user.authorization == req.headers.authorization
+    });
 
+    if (authorizedUser.length == 0)
+        res.json("Not Authorized User");
+
+    var searchResult = lodash.filter(contacts, function (contact) {
+        if (contact.name.includes(req.params.keyword) ||
+            contact.email.includes(req.params.keyword))
+            return contact;
+    });
+
+    res.json(searchResult);
+});
 
 module.exports = router;
