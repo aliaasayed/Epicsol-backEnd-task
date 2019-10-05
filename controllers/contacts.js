@@ -30,4 +30,29 @@ router.post("/add", urlEncodedMid, function (req, res) {
     }
 });
 
+// Edit Contact Router
+router.put("/edit/:id", urlEncodedMid, function (req, res) {
+    var authorizedUser = lodash.filter(users, function (user) {
+        return user.authorization == req.headers.authorization
+    });
+
+    if (authorizedUser.length == 0)
+        res.json("Not Authorized User");
+
+    lodash.filter(contacts, function (contact) {
+        if (contact.id == req.params.id) {
+            if (req.body.name)
+                contact.name = req.body.name;
+
+            if (req.body.email)
+                contact.email = req.body.email;
+
+            if (req.body.phones)
+                contactphones = JSON.stringify(req.body.phones);
+        }
+    });
+    res.json(contacts);
+});
+
+
 module.exports = router;
