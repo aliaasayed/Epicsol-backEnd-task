@@ -1,0 +1,6 @@
+[
+    {
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae",
+        "authorization":"MY_SECRET_ENCRYPTED_TOKEN"
+    }
+]

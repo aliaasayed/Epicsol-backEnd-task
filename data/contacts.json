@@ -1,0 +1,37 @@
+[
+    {
+        "id": "50f19c31-5838-40a6-975f-bd3d38a66810",
+        "name": "Arron Pryce",
+        "email": "apryce0@gov.uk",
+        "phones": "['123456789','987654321']",
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae"
+    },
+    {
+        "id": "3d34966e-e39a-4fb8-b26d-eb70f1b326e3",
+        "name": "Kalinda Burrell",
+        "email": "kburrell1@quantcast.com",
+        "phones": "['123456789','987654321']",
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae"
+    },
+    {
+        "id": "6e6dcdea-5e84-4c15-ad74-89d7401a1cf4",
+        "name": "Dinnie O'Concannon",
+        "email": "doconcannon2@nih.gov",
+        "phones": "['123456789','987654321']",
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae"
+    },
+    {
+        "id": "7f10a135-3cc4-49e0-840e-2d77db91665b",
+        "name": "Jada Tatlow",
+        "email": "jtatlow3@vk.com",
+        "phones": "['123456789','987654321']",
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae"
+    },
+    {
+        "id": "a7fc1db4-2832-41d9-8526-53eb39bf90c3",
+        "name": "Leonard Simmen",
+        "email": "lsimmen4@wix.com",
+        "phones": "['123456789','987654321']",
+        "userId": "559c9043-b302-4cf8-ac3a-cf2af51543ae"
+    }
+]
