@@ -54,5 +54,21 @@ router.put("/edit/:id", urlEncodedMid, function (req, res) {
     res.json(contacts);
 });
 
+// Delete Contact Router
+router.delete("/delete/:id", urlEncodedMid, function (req, res) {
+    var authorizedUser = lodash.filter(users, function (user) {
+        return user.authorization == req.headers.authorization
+    });
+
+    if (authorizedUser.length == 0)
+        res.json("Not Authorized User");
+
+    lodash.remove(contacts, function (contact) {
+        return contact.id == req.params.id
+    });
+
+    res.json(contacts);
+});
+
 
 module.exports = router;
