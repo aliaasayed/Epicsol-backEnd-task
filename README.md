@@ -1,7 +1,14 @@
 # Epicsol-backEnd-task
+simple contact list using nodejs
 
-1- git clone the repo.
+## How to Run?
 
-2- run "npm install" to install node modules.
+1- clone project:
+```bash
+git clone https://github.com/aliaasayed/Epicsol-backEnd-task.git
+```
+2- run app: 
 
-3- run "node app.js" to run server -- server is run on port 3000
+    # install dependencies using "npm i"
+    # start the server using "npm start"
+    # the server is run on port 3000
